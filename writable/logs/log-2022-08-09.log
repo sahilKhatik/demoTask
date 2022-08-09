@@ -1,0 +1,26 @@
+CRITICAL - 2022-08-09 00:47:41 --> Could not move file phpnxwgu6 to /opt/lampp/htdocs/demoTask/writable/ ()
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 149.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(149): CodeIgniter\HTTP\Exceptions\HTTPException::forMoveFailed('phpnxwgu6', 'ROOTPATH/writable', 'ROOTPATH/public')
+ 2 APPPATH/Controllers/Dashboard.php(21): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH/writable', 'uploads')
+ 3 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Dashboard->uploadFileForm()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-09 00:50:17 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/Dashboard.php(21): CodeIgniter\HTTP\Files\UploadedFile->move('ROOTPATH/writable/uploads')
+ 3 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Dashboard->uploadFileForm()
+ 4 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 5 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-08-09 01:48:37 --> There is no data to insert.
+in SYSTEMPATH/BaseModel.php on line 1577.
+ 1 SYSTEMPATH/BaseModel.php(1577): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+ 2 SYSTEMPATH/BaseModel.php(704): CodeIgniter\BaseModel->transformDataToArray(null, 'insert')
+ 3 SYSTEMPATH/Model.php(666): CodeIgniter\BaseModel->insert(null, true)
+ 4 APPPATH/Controllers/Dashboard.php(26): CodeIgniter\Model->insert(null)
+ 5 SYSTEMPATH/CodeIgniter.php(898): App\Controllers\Dashboard->uploadFileForm()
+ 6 SYSTEMPATH/CodeIgniter.php(457): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+ 7 SYSTEMPATH/CodeIgniter.php(340): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
